@@ -1,6 +1,5 @@
-import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { BinomialResult, formatCurrency } from '@/lib/binomial';
+import { BinomialResult} from '@/lib/binomial';
 import { motion } from 'framer-motion';
 
 interface BinomialTreeProps {
