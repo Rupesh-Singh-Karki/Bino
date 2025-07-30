@@ -80,7 +80,7 @@ export function BinomialTree({ result }: BinomialTreeProps) {
                 
                 {/* Draw connections between nodes */}
                 {tree.slice(0, -1).map((stepNodes, stepIndex) =>
-                  stepNodes.map((node, nodeIndex) => {
+                  stepNodes.map((_, nodeIndex) => {
                     const currentPos = getNodePosition(stepIndex, nodeIndex);
                     const upPos = getNodePosition(stepIndex + 1, nodeIndex + 1);
                     const downPos = getNodePosition(stepIndex + 1, nodeIndex);
